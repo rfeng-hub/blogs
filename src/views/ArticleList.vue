@@ -24,11 +24,13 @@
 					<div class="footer-box">
 						<span>
 							<i class="iconfont icon-tags" v-if="article.tags.length"></i>
-							<a
+							<router-link
 								v-for="(tag, j) in article.tags"
 								:key="j"
-								:href="'/view/' + tag.code"
-								>{{ tag.name + (j === article.tags.length - 1 ? '' : ',') }}</a
+								:to="'/view/' + tag.code"
+								>{{
+									tag.name + (j === article.tags.length - 1 ? '' : ',')
+								}}</router-link
 							>
 						</span>
 					</div>

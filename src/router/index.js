@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-const NotFound = () => import('@/components/NotFound.vue')
-const Article = () => import('@/views/Article.vue')
-const ArticleList = () => import('@/views/ArticleList.vue')
+const NotFound = () => import('../components/NotFound.vue')
+const Article = () => import('../views/Article.vue')
+const ArticleList = () => import('../views/ArticleList.vue')
 
 Vue.use(VueRouter)
 const routes = [
@@ -74,6 +74,5 @@ const routes = [
 
 export default new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
   routes: routes
 })
