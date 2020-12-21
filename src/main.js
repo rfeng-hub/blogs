@@ -13,7 +13,7 @@ import 'nprogress/nprogress.css'
 import 'github-markdown-css/github-markdown.css'
 
 Vue.config.productionTip = false
-axios.defaults.baseURL = 'http://127.0.0.1:85/api/'
+axios.defaults.baseURL = 'http://123.57.5.190:85/api/'
 Vue.prototype.$axios = axios
 // 请求的拦截器
 axios.interceptors.request.use(
