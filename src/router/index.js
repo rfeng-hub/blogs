@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 const NotFound = () => import('../components/NotFound.vue')
+const Main = () => import('../views/Main.vue')
+const Editor = () => import('../views/Editor.vue')
 const Article = () => import('../views/Article.vue')
 const ArticleList = () => import('../views/ArticleList.vue')
 
@@ -8,12 +10,12 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    component: () => import('../views/Main.vue'),
+    component: Main,
     redirect: '/view'
   },
   {
     path: '/view',
-    component: () => import('../views/Main.vue'),
+    component: Main,
     redirect: '/view/new',
     children: [
       {
@@ -60,11 +62,11 @@ const routes = [
   },
   {
     path: '/add',
-    component: () => import('../views/Editor.vue')
+    component: () => Editor
   },
   {
     path: '/edit/:id',
-    component: () => import('../views/Editor.vue')
+    component: () => Editor
   },
   {
     path: '*',

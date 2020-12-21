@@ -17,10 +17,6 @@
 						</v-list-item-title>
 						<v-list-item-subtitle>2862284818@qq.com</v-list-item-subtitle>
 					</v-list-item-content>
-
-					<v-list-item-action>
-						<v-icon>mdi-menu-down</v-icon>
-					</v-list-item-action>
 				</v-list-item>
 			</v-list>
 			<v-divider></v-divider>
